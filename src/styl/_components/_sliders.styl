@@ -17,3 +17,46 @@
 			opacity 0
 			visibility hidden
 			pointer-events none
+			
+
+
+.projects
+	&__slider
+		min-height 371px
+		&--wrapper
+			border-bottom 1px solid #cccccd
+			padding-bottom 80px
+			
+		*
+			box-sizing border-box
+			
+		.swiper-slide-active
+			.card
+				&__content
+					&--body
+						padding-bottom 25px
+						height 124px
+				&__tools
+					background-color transparent
+				&__rating
+					
+					color $text-color
+					.card__label
+						color $light-text-color
+			
+	&__slide
+		// padding 25px
+		.card
+			&:hover
+				.card
+					&__content
+						&--body
+							padding-bottom 25px
+							height 124px
+					&__tools
+						background-color transparent
+					&__rating
+						
+						color $text-color
+						.card__label
+							color $light-text-color

@@ -18,4 +18,22 @@ $(document).ready(function() {
 	});
 
 
+	// Menu
+	$('.js-open-menu-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-active');
+	});
+
+	// Sliders
+	var projectsSlider = new Swiper('.js-projects-slider', {
+		slidesPerView: 3,
+		spaceBetween: 50,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+
+
 });

@@ -93,10 +93,10 @@ img
 .gutters
 	padding $gutters
 .gutter
-	&__top
+	&-top
 		padding-top $gutter-top
-	&__bottom
-		padding-top $gutter-bottom
+	&-bottom
+		padding-bottom $gutter-bottom
 	
 .w3c
 	visibility hidden
@@ -109,8 +109,51 @@ img
 	
 .sect
 	&__title
-		font 2em $Bold
+		font 38px $Bold
 		margin-bottom 40px
+		span
+			display inline-block
+			position relative
+			
+		&--sm
+			font 20px $Med
+			color #3b3b3b
+			span
+				display inline-block
+				padding-bottom 30px
+				padding-left 5px
+				position relative
+				&:before
+					position absolute
+					pseudo()
+					bottom 0
+					left 0
+					border-radius 30px
+					background-color $accent-color
+					height 6px
+					width 50px
+			
+	&-with-decor
+		span
+			&:after
+				pseudo()
+				position absolute
+				left 100%
+				vertical-center()
+				margin-left 30px
+				width 62.141px
+				height 14.3px
+				background url('../img/decor/leafs.svg') 50% 50% no-repeat
+				
+		&-top
+			span
+				padding-top 55px
+				&:after
+					transform none
+					top 0
+					left 0
+					margin-left 0
+				
 		
 
 
@@ -125,6 +168,9 @@ img
 	
 .light-color
 	color $light-color
+	
+.light-text-color
+	color $light-text-color
 
 .dark-color
 	color $dark-color
@@ -146,17 +192,22 @@ img
 .bg-with-overlay
 	position relative
 	bg(50%, 50%)
+	overflow hidden
 	&:before
 		pseudo()
 		position absolute
 		fullSize()
 		background-color rgba($bg-overlay-color, $bg-overlay-opacity)
+		z-index 2
 	.container
 		position relative
-		z-index 2
+		z-index 3
 		
 .dark-bg
 	background-color $dark-bg
+	
+.light-bg
+	background-color $light-bg
 	
 
 // ========== ========== ========== ========== ========== ==========

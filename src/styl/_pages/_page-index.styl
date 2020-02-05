@@ -1,0 +1,170 @@
+// Promo
+
+.sect__promo
+	min-height 520px
+	padding 90px 0
+	display flex
+	align-items center
+	position relative
+	overflow hidden
+	
+	.container
+		position relative
+		z-index 4
+		
+
+.title
+	font 54px $Bold
+	margin-bottom 20px
+	
+.subtitle
+	margin-bottom 60px
+	font 24px $Med
+
+
+.promo__block--btns
+	.btn
+		margin-right 40px
+		&:last-child
+			margin-right 0
+			
+
+// Section help
+.sect__help
+	position relative
+	z-index 4
+	margin-top -40px
+.help__row
+	.sect__title--sm
+		margin-right 100px
+.help
+	&__items
+		display flex
+		justify-content flex-start
+		margin-left -25px
+		margin-right -25px
+		flex 1
+		
+	&__item
+		background-color $light-color
+		height 145px
+		padding 15px 20px
+		border-radius 6px
+		position relative
+		img
+			display block
+			position absolute
+			right 10px
+			bottom 10px
+			max-width 125px
+			max-height 90px
+			height auto
+			width auto
+			
+		&--title
+			font-family $SemiBold
+			color $dark-color
+			position relative
+			z-index 1
+			line-height 1.2
+		&--wrapper
+			width 25%
+			padding 0 25px
+			
+
+// SEct projects
+.sect__projects
+	padding-top 90px
+	position relative
+	&:before
+		pseudo()
+		position absolute
+		horisontal-center()
+		top 0
+		width 62.141px
+		height 14.3px
+		background url('../img/decor/leafs.svg') 50% 50% no-repeat
+		
+
+.card
+	position relative
+	border-radius 8px
+	overflow hidden
+	&__thumbnail
+		display block
+		height 185px
+		backface-visibility hidden
+		position relative
+		overflow hidden
+		img
+			display block
+			position absolute
+			top 0
+			left 0
+			width 0.1px
+			height 0.1px
+			z-index -9999
+			opacity 0
+			pointer-events none
+		&--bg
+			display block
+			position absolute
+			fullSize()
+			transition transform .17s ease-in-out
+			
+		&:hover
+			span
+				transform scale(1.03, 1.03)
+	&__content
+		
+	&__title
+		font 16px $SemiBold
+		line-height 1.2
+		a
+			color inherit
+			&:hover
+				color $accent-color
+	&__label
+		font 10px $SemiBold
+	&__rating
+		width 62px
+		height 62px
+		text-align center
+		display flex
+		flex-direction column
+		align-items center
+		justify-content center
+		// background-color rgba(0,0,0, .4)		
+		color $light-color
+		transition all .17s ease-in-out
+		&--value
+			font 20px $SemiBold
+			
+	&__tools
+		position absolute
+		right 0
+		bottom 0
+		z-index 2
+		background-color rgba(0,0,0, .4)
+		border-top-left-radius 8px
+		
+	&__content
+		background-color $light-color
+		
+		max-height 186px
+		transition all .17s ease-in-out
+		
+		&--header
+			padding 10px 80px 14px 20px	
+			height 62px
+			display flex
+			align-items center
+		&--body
+			padding 0 80px 0 20px	
+			font 12px $Reg
+			
+			height 0
+			transition all .17s ease-in-out
+		
+
+	

@@ -1,0 +1,128 @@
+video::-webkit-media-controls 
+	display none !important
+
+.video
+	position absolute
+	left 0
+	right 0
+	top 0
+	bottom 0
+	display block
+	overflow hidden
+	border-top-left-radius 40px
+	border-top-right-radius 40px
+	pointer-events none
+	
+
+	&__item
+		display block
+		object-fit cover
+		position absolute
+		position-center()
+		min-width 100%
+		min-height 100%
+		width auto
+		height auto
+		
+
+.socials
+	font-size 0
+	&__item
+		margin-right 35px
+		display inline-block
+		&:last-child
+			margin-right 0
+			
+	&__link
+		display block
+		width 16px
+		height 16px
+		&--ic
+			svg()
+		
+		svg
+			svg()
+			transition fill .17s ease-in-out
+			fill $text-color
+			
+		&:hover
+			svg
+				fill $accent-color
+				
+
+.langs
+	margin-right 55px
+	&__item
+		display inline-block
+		margin-right 36px
+		position relative
+		&:after
+			pseudo()
+			position absolute
+			vertical-center()
+			left 100%
+			margin-left 18px
+			width 2px
+			height 18px
+			background-color $accent-color
+		&:last-child
+			margin-right 0
+			&:after
+				display none
+	&__link
+		color $light-text-color
+		font 1em $SemiBold
+		&:hover,
+		&.is-active
+			color $text-color
+			
+
+
+.ic
+	display block
+	position absolute
+	position-center()
+	svg
+		svg()
+		
+	&__block
+		display block
+		position relative
+		width 62px
+		height 62px
+		
+	&-like
+		background-color $secondary-color
+		border-top-left-radius 8px
+		.ic
+			width 25px
+			height 23px
+		svg
+			fill $light-color
+			
+		&:hover
+			
+			svg
+				fill $text-color
+				
+		&.is-active
+			background-color $accent-color
+			&:hover
+				svg
+					fill $text-color
+			
+	&-link
+		background-color $accent-color
+		border-bottom-right-radius 8px
+		
+		.ic
+			width 19px
+			height 17px
+		
+		svg
+			fill $text-color
+		
+
+		&:hover
+			background-color $secondary-color
+			
