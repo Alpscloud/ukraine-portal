@@ -1,15 +1,19 @@
-.form
-	max-width 600px
-	margin 40px auto
+.inputs__row
+	margin-bottom 15px
+	.input__wrapper
+		width 50%
+		padding 15px
+		margin 0
 	
 .input
 	display block
 	width 100%
-	padding 10px 15px
-	text-align left
-	background-color $light-color
-	border 2px solid transparent
-	font 1em $Reg
+	padding 22.5px 15px
+	text-align center
+	background-color $input-bg
+	font 14px $Reg
+	border-radius 7px
+	border 1px solid transparent
 	color $text-color
 	&:hover,
 	&:focus
@@ -34,7 +38,9 @@
 	&.is-error
 		border-color red
 	
-
+.textarea
+	text-align left
+	min-height 110px
 
 .checkbox,
 .radio

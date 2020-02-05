@@ -18,6 +18,12 @@
 			visibility hidden
 			pointer-events none
 			
+	&__controls
+		width 175px
+		display flex
+		justify-content space-between
+		
+
 
 
 .projects
@@ -26,6 +32,8 @@
 		&--wrapper
 			border-bottom 1px solid #cccccd
 			padding-bottom 80px
+			margin-bottom 100px
+			position relative
 			
 		*
 			box-sizing border-box
@@ -43,20 +51,33 @@
 					color $text-color
 					.card__label
 						color $light-text-color
+		
+		&--controls
+			position absolute
+			bottom 80px	
+			left 406px
+			z-index 1
+			display flex
+			align-items center
+			justify-content flex-start
 			
+			.permalink
+				margin-left 60px
 	&__slide
-		// padding 25px
 		.card
-			&:hover
-				.card
-					&__content
-						&--body
-							padding-bottom 25px
-							height 124px
-					&__tools
-						background-color transparent
-					&__rating
+			width 100%
+	// 	// padding 25px
+	// 	.card
+	// 		&:hover
+	// 			.card
+	// 				&__content
+	// 					&--body
+	// 						padding-bottom 25px
+	// 						height 124px
+	// 				&__tools
+	// 					background-color transparent
+	// 				&__rating
 						
-						color $text-color
-						.card__label
-							color $light-text-color
+	// 					color $text-color
+	// 					.card__label
+	// 						color $light-text-color

@@ -29,9 +29,10 @@ $(document).ready(function() {
 	var projectsSlider = new Swiper('.js-projects-slider', {
 		slidesPerView: 3,
 		spaceBetween: 50,
-		pagination: {
-			el: '.swiper-pagination',
+		navigation: {
 			clickable: true,
+			nextEl: '.js-projects-slider-btn-next',
+    	prevEl: '.js-projects-slider-btn-prev',
 		},
 	});
 

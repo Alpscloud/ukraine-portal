@@ -93,7 +93,7 @@ video::-webkit-media-controls
 		
 	&-like
 		background-color $secondary-color
-		border-top-left-radius 8px
+		border-top-left-radius 7px
 		.ic
 			width 25px
 			height 23px
@@ -106,14 +106,15 @@ video::-webkit-media-controls
 				fill $text-color
 				
 		&.is-active
-			background-color $accent-color
+			svg
+				fill $text-color
 			&:hover
 				svg
-					fill $text-color
+					fill $light-color
 			
 	&-link
 		background-color $accent-color
-		border-bottom-right-radius 8px
+		border-bottom-right-radius 7px
 		
 		.ic
 			width 19px
@@ -125,4 +126,29 @@ video::-webkit-media-controls
 
 		&:hover
 			background-color $secondary-color
+			
+
+.permalink
+	position relative
+	display inline-block
+	padding-right 25px
+	color $text-color
+	font 14px $SemiBold
+	&__ic
+		display inline-block
+		position absolute
+		vertical-center()
+		right 0
+		width 7px
+		height 12px
+		transition transform .17s ease-in-out
+		svg
+			svg()
+			fill #B9C4A7
+	&:hover
+		color $accent-color
+		.permalink__ic
+			transform translate(-5px, -50%)
+		svg
+			fill $accent-color
 			
