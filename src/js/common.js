@@ -18,6 +18,17 @@ $(document).ready(function() {
 	});
 
 
+	// ========= Smooth scrolling to the acnhors ===========
+	$('.js-smooth-scroll-link').on('click', function (e) {
+		e.preventDefault();
+		var id = $(this).attr('href'),
+			top = $(id).offset().top;
+
+		$('html, body').animate({scrollTop: top}, 'slow');
+	});	
+	// ========= =========== =========== ===========
+
+
 	// Menu
 	$('.js-open-menu-btn').on('click', function(e) {
 		e.preventDefault();

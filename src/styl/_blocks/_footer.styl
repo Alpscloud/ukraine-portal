@@ -1,2 +1,50 @@
 .footer
 	background-color $footer-bg
+	padding 50px 0
+	color $text-color
+	font 12px $SemiBold
+	a
+		color inherit
+		&:hover
+			color $accent-color
+	
+	&__col
+		padding 0 15px
+		// width 20%
+		
+	&__nav
+		
+		&--item
+			display block
+			margin-bottom 10px
+			&:last-child
+				margin-bottom 0
+	
+	&__contacts
+		margin-bottom 20px
+		p
+			margin-bottom 15px
+			&:last-child
+				margin-bottom 0
+				
+.developed
+	margin-top 35px
+	display flex
+	justify-content center
+	align-items center
+	&__text
+		display inline-block
+		margin-right 12px
+		font 8px $SemiBold
+		
+	&__logo
+		display inline-block
+		flex none
+		img
+			display block
+			max-width 60px
+		&:hover
+			opacity .6	
+
+.address
+	line-height 1.8
