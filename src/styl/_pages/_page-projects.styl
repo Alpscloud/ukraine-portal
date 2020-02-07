@@ -1,0 +1,160 @@
+.projects
+	&__categories
+		margin-bottom 20px
+		&--row
+			margin-left -20px
+			margin-right -20px
+	&__category
+		padding 20px
+		flex 1 
+	
+
+	&__row
+		margin-left -25px
+		margin-right -25px
+		
+
+.project-card
+	&__wrapper
+		width 33.3333%
+		padding 25px
+		
+		.card
+			width 100%
+			
+
+.article
+	&__category
+		margin-bottom 55px
+	&__block
+		&--info
+			width 420px
+			flex none
+			padding-top 110px
+		&--content
+			flex 1
+			padding-left 40px
+			
+		&--title
+			font 38px $Bold
+			margin-bottom 70px
+			
+	&__rating
+		text-align center
+		span
+			display block
+		&--label
+			font 11px $Bold
+			color $light-text-color
+			display inline-block
+		&--value
+			font 38px $Bold
+		&--wrapper
+			background-color $light-color
+			@extends .box-shadow
+			border-radius 7px
+			padding 20px
+			max-width 215px
+			
+			display flex
+			align-items center
+			justify-content space-between
+
+.content
+	font-size 14px
+	img
+		display block
+		width auto
+		max-width 100%
+		
+		border-radius 7px
+		@extends .box-shadow
+		margin-bottom 55px
+		margin-top 120px
+		&:first-child
+			margin-top 0
+		&:last-child
+			margin-bottom 0
+			
+
+	h2,h3,h4,h5,h6
+		font-family $Bold
+		color #3b3b3b
+		margin-bottom 40px
+		&:last-child
+			margin-bottom 0
+	
+	h6
+		font-size 1.142857em
+		
+	h5
+		font-size 1.428571em
+	
+	h4
+		font-size 1.7142857em
+		
+	h3
+		font-size 2em
+		
+	h2
+		font-size 2.2857142857em
+
+	b, strong
+		font-family $Bold
+		
+	i
+		font-family $Italic
+		
+	a
+		color $accent-color
+		text-decoration underline
+		&:hover
+			text-decoration none
+			
+
+	p
+		margin-bottom 20px
+		line-height 1.4
+		&:last-child
+			margin-bottom 0
+			
+
+	ul, ol
+		margin-bottom 20px
+		&:last-child
+			margin-bottom 0
+			
+
+	ul
+		li
+			position relative
+			display block
+			margin-bottom 10px
+			&:last-child
+				margin-bottom 0
+				
+			&:before
+				pseudo()
+				vertical-align middle
+				width 4px
+				height 4px
+				border-radius 50%
+				background-color $accent-color
+				margin-right 6px
+				
+
+	ol
+		counter-reset list 
+		li
+			position relative
+			display block
+			margin-bottom 10px
+			&:last-child
+				margin-bottom 0
+				
+			&:before
+				content counter(list)'. '
+				counter-increment list
+				color $accent-color
+				font-family $SemiBold
+			

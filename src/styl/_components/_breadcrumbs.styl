@@ -1,12 +1,25 @@
 .breadcrumbs
+	margin-bottom 45px
 	&__item
 		display inline-block
-		margin-right 15px
+		margin-right 6px
 		position relative
+		color $breadcrumbs-link-color
+		&:after
+			content '-'
+			display inline-block
+			position absolute
+			vertical-center()
+			left 100%
+			margin-left 2px
 		&:last-child
 			margin-right 0
+			&:after
+				display none
 	&__link
 		display block
-		color $text-color
-		&.is-active
+		font 10px $SemiBold
+		color inherit
+		&.is-active,
+		&:hover
 			color $accent-color

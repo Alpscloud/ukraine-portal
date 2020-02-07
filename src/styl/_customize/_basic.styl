@@ -89,12 +89,20 @@ img
 
 .clearfix:after
 	clear both
+	
+.sect__page
+	padding-top 70px
+	
+
+	
 
 .gutters
 	padding $gutters
 .gutter
 	&-top
 		padding-top $gutter-top
+		&-sm
+			padding-top 25px
 	&-bottom
 		padding-bottom $gutter-bottom
 	
@@ -114,7 +122,8 @@ img
 		span
 			display inline-block
 			position relative
-			
+		&--xs
+			font 20px $Bold	
 		&--sm
 			font 20px $Bold
 			color #3b3b3b
@@ -132,7 +141,8 @@ img
 					background-color $accent-color
 					height 6px
 					width 50px
-			
+		&--row
+			margin-bottom 35px	
 		&.with-decor
 			span
 				&:after
@@ -203,8 +213,8 @@ img
 		position relative
 		z-index 3
 		
-.dark-bg
-	background-color $dark-bg
+.color-bg
+	background-color $color-bg
 	
 .light-bg
 	background-color $light-bg
@@ -213,5 +223,10 @@ img
 .box-shadow
 	box-shadow 0px 3px 16px 0px rgba(0,0,0,0.07)
 	
+
+
+.b-radius
+	border-top-left-radius 20px
+	border-top-right-radius 20px
 
 // ========== ========== ========== ========== ========== ==========

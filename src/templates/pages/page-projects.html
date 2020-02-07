@@ -1,0 +1,81 @@
+{% include '../parts/head.html' %}
+<body class="light-bg">
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main color-bg b-radius">
+
+			<section class="sect__page gutter-bottom">
+				<h2 class="w3c">&nbsp;</h2>
+
+				<div class="container">
+
+					<section class="sect__content">
+						<h1 class="sect__title with-decor"><span>Проекты в работе</span></h1>
+
+						<div class="projects__categories">
+							<div class="row projects__categories--row align-horisontal-start">
+								<div class="projects__category">
+									<a href="#" class="btn btn-sm btn-wide is-active">Все</a>
+								</div>
+
+								<div class="projects__category">
+									<a href="#" class="btn btn-sm btn-wide">Экология</a>
+								</div>
+
+								<div class="projects__category">
+									<a href="#" class="btn btn-sm btn-wide">Производство</a>
+								</div>
+
+								<div class="projects__category">
+									<a href="#" class="btn btn-sm btn-wide">Помощь</a>
+								</div>
+
+								<div class="projects__category">
+									<a href="#" class="btn btn-sm btn-wide">Благотворительность</a>
+								</div>
+
+								<div class="projects__category">
+									<a href="#" class="btn btn-sm btn-wide">Другое</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="projects">
+							<div class="row projects__row align-horisontal-start">
+								{% include '../parts/components/card.html' %}
+								{% include '../parts/components/card.html' %}
+								{% include '../parts/components/card.html' %}
+								{% include '../parts/components/card.html' %}
+								{% include '../parts/components/card.html' %}
+							</div>
+						</div>
+
+					</section>
+					
+				</div>
+				<!-- //container -->
+
+			</section>
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>
