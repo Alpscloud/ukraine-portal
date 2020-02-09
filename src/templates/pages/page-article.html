@@ -1,0 +1,76 @@
+{% include '../parts/head.html' %}
+<body class="light-bg">
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main color-bg b-radius">
+
+			<section class="sect__page gutter-top-sm gutter-bottom">
+				<h2 class="w3c">&nbsp;</h2>
+
+				<div class="container">
+
+					<!-- Breadcrumbs -->
+					<div class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item"><a href="page-news.html" class="breadcrumbs__link">Новости</a></li>
+							<li class="breadcrumbs__item"><span class="breadcrumbs__link is-active">Название статьи</span></li>
+						</ul>
+					</div>
+					<!-- //Breadcrumbs -->
+
+					<section class="sect__content">
+						<h2 class="w3c">&nbsp;</h2>
+
+						<article class="article__block">
+							<div class="row article__block--row">
+								<div class="article__block--info">
+
+									<h1 class="article__block--title sect__title with-decor with-decor-top"><span>Длинное название статьи</span></h1>
+
+
+									<p class="article__date">10 января 2020</p>
+								</div>
+
+								<!-- ARticle content -->
+								<div class="article__block--content">
+									{% include '../parts/components/content.html' %}
+
+									<div class="permalink__wrapper">
+										<a href="page-news.html" class="btn btn-accent">Вернуться назад</a>
+									</div>
+								</div>
+								<!-- //ARticle content -->
+							</div>
+						</article>
+
+
+					</section>
+					
+				</div>
+				<!-- //container -->
+
+			</section>
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

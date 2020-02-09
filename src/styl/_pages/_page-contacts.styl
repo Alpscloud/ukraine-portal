@@ -1,0 +1,46 @@
+.map
+	&__wrapper
+		position absolute
+		top 0
+		right 0
+		height 100%
+		width 50%
+		
+		iframe
+			display block
+			fullSize()
+			
+
+.contacts
+	max-width 50%
+	padding-right 30px
+	
+	&__block
+		margin-bottom 55px
+		padding-left 55px
+		color $text-color
+		p
+			margin-bottom 5px
+			&:last-child
+				margin-bottom 0
+		a
+			color inherit
+			&:hover
+				color $accent-color
+		&:last-child
+			margin-bottom 0
+			
+		&--title
+			position relative
+			font 20px $Bold
+			margin-bottom 30px
+			&:before
+				pseudo()
+				position absolute
+				right 100%
+				vertical-center()
+				margin-right 40px
+				width 11px
+				height 14px
+				background url('../img/decor/leaf.svg') 50% 50% no-repeat / 11px 14px
+				

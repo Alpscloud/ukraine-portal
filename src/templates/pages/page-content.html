@@ -1,0 +1,61 @@
+{% include '../parts/head.html' %}
+<body class="light-bg">
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main color-bg b-radius">
+
+			<section class="sect__page gutter-bottom gutter-top-sm">
+				<h2 class="w3c">&nbsp;</h2>
+
+				<div class="container">
+
+					<!-- Breadcrumbs -->
+					<div class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item"><span class="breadcrumbs__link is-active">Название страницы</span></li>
+						</ul>
+					</div>
+					<!-- //Breadcrumbs -->
+
+					<section class="sect__content">
+						<h1 class="sect__title with-decor"><span>Политика конфиденциальности</span></h1>
+
+						{% include '../parts/components/content.html' %}
+
+						<div class="permalink__wrapper">
+							<a href="index.html" class="btn btn-accent">Вернуться назад</a>
+						</div>
+
+
+					</div>
+
+				</section>
+
+			</div>
+			<!-- //container -->
+
+		</section>
+
+	</main>
+	<!-- //Main -->
+
+	<!-- Footer -->
+	{% include '../parts/sections/footer.html' %}
+	<!-- //Footer -->
+
+</div>
+<!-- //CONTENT WRAPPER -->
+
+{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

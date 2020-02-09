@@ -1,0 +1,76 @@
+{% include '../parts/head.html' %}
+<body class="light-bg">
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main color-bg b-radius">
+
+			<section class="sect__page gutter-top-sm gutter-bottom">
+				<h2 class="w3c">&nbsp;</h2>
+
+				<div class="container">
+
+					<!-- Breadcrumbs -->
+					<div class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item"><span class="breadcrumbs__link is-active">Новости</span></li>
+						</ul>
+					</div>
+					<!-- //Breadcrumbs -->
+
+					<section class="sect__content">
+						<h1 class="sect__title with-decor"><span>Новости</span></h1>
+
+						<div class="articles">
+
+							<div class="articles__block">
+								<p class="articles__date">Февраль 2020</p>
+
+								<div class="row articles__row align-horisontal-start">
+									{% include '../parts/components/article.html' %}
+									{% include '../parts/components/article.html' %}
+									{% include '../parts/components/article.html' %}
+									{% include '../parts/components/article.html' %}
+								</div>
+							</div>
+
+							<div class="articles__block">
+								<p class="articles__date">Март 2020</p>
+
+								<div class="row articles__row align-horisontal-start">
+									{% include '../parts/components/article.html' %}
+									{% include '../parts/components/article.html' %}
+									{% include '../parts/components/article.html' %}
+								</div>
+							</div>
+						</div>
+
+					</section>
+					
+				</div>
+				<!-- //container -->
+
+			</section>
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>
