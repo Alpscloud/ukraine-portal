@@ -24,6 +24,12 @@ $(document).ready(function() {
 		var id = $(this).attr('href'),
 			top = $(id).offset().top;
 
+			if($('.js-menu').hasClass('is-opened')) {
+				$('.js-menu').removeClass('is-opened');
+				$('html').removeClass('is-fixed');
+				$('.js-open-menu-btn').removeClass('is-active');
+			}
+
 		$('html, body').animate({scrollTop: top}, 'slow');
 	});	
 	// ========= =========== =========== ===========
@@ -52,6 +58,9 @@ $(document).ready(function() {
 		e.preventDefault();
 
 		$(this).toggleClass('is-active');
+		$('html').toggleClass('is-fixed');
+
+		$('.js-menu').toggleClass('is-opened');
 	});
 
 	// Sliders

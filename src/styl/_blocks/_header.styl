@@ -1,11 +1,41 @@
 .header
 	background-color $header-bg
-	padding 13px 0
 	
+	position relative
+	z-index 5
+	&:before,
+	&:after
+		pseudo()
+		position absolute
+		top 0
+		width 41px
+		height 122.676px
+		z-index 2
+		
+	&:before
+		left 0
+		background url('../img/decor/left.svg') 50% 50% no-repeat / 41px 122.676px
+		
+		
+	&:after
+		right 0
+		background url('../img/decor/right.svg') 50% 50% no-repeat / 41px 122.676px
+		
+	&__content
+		padding 13px 0
+		position relative
+		z-index 3
+		background-color $header-bg
+		
+		.container
+			position relative
+			z-index 4
 	.socials
 		margin-right 55px
 		
-
+	&__tools
+		&--col
+			flex 1
 .phone
 	margin-right 55px
 	&__text
